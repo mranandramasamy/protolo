@@ -1040,11 +1040,12 @@ void connectToSelectedWiFiAndSync() {
         if(!example_lvgl_lock(-1)) return;
         lv_obj_clean(scr);
         lv_obj_t *lblErr = lv_label_create(scr);
-        lv_label_set_text(lblErr, "Connection Failed!\nReturning to Menu...");
+        lv_label_set_text(lblErr, "Connection Failed!\nCheck Password.\nReturning to Menu...");
         lv_obj_align(lblErr, LV_ALIGN_CENTER, 0, 0);
         lv_timer_handler();
         example_lvgl_unlock();
-        delay(2500);
+        
+        delay(5000); // INCREASED TO 5 SECONDS so the E-Paper can finish drawing
         
         WiFi.disconnect(true);
         WiFi.mode(WIFI_OFF);
