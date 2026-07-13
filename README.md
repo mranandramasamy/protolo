@@ -32,5 +32,5 @@ This project is built using the Arduino IDE framework for ESP32. Ensure you have
 * `WebServer` & `WiFi` (Built into ESP32 core)
 * `LittleFS` (Built into ESP32 core)
 
-# The core component library was fetched from 
-(ESP32-S3-ePaper-1.54)[https://github.com/waveshareteam/ESP32-S3-ePaper-1.54]
+### The core component library was fetched from 
+[ESP32-S3-ePaper-1.54](https://github.com/waveshareteam/ESP32-S3-ePaper-1.54)
